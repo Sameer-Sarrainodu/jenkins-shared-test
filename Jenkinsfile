@@ -1,9 +1,9 @@
-@Library('jenkins-shared-Library') _
+@Library('jenkins-shared-library') _
 
 def configMap = [
     project : "sample",
     component : "brocklesner"
-] 
+]
 
 if(env.BRANCH_NAME.equalsIgnoreCase("main")){
     samplePipeline(configMap)
